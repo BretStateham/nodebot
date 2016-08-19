@@ -29,6 +29,6 @@ server.post('/api/messages',connector.listen());
 //====================
 
 bot.dialog('/',function(session){
-    //console.log(session.message);
+    console.log(session.message);
     session.send("Hello, " + session.message.user.name + '!  ' + session.message.text + ' to you too!');
 })
